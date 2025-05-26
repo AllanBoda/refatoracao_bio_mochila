@@ -1,4 +1,4 @@
-# Refatoracao.md - Projeto Bio-Mochila
+# Projeto Bio-Mochila
 
 ## Objetivo da Refatoração
 
