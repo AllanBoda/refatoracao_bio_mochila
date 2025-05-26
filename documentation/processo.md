@@ -13,22 +13,17 @@ Para garantir que o código original não fosse impactado, seguimos um processo 
 * Criamos um **repositório separado** baseado no código original do grupo colega.
 * Preservamos os arquivos originais intactos na pasta `/original/`.
 
-### 2. **Criação da branch de trabalho**
-
-* Criamos uma branch `refatoracao` para realizar todas as modificações de forma isolada.
-* O Git foi utilizado para rastrear todas as mudanças.
-
-### 3. **Organização em módulos**
+### 2. **Organização em módulos**
 
 * Dividimos os arquivos em `interface`, `controller` e `algoritmo`.
 * Adicionamos pasta `tests/` com arquivos de teste.
 
-### 4. **Validação Contínua**
+### 3. **Validação Contínua**
 
 * Rodamos `pytest` a cada alteração.
 * Usamos `flake8` e `pylint` para verificar qualidade do código.
 
-### 5. **Documentação e Slides**
+### 4. **Documentação e Slides**
 
 * Documentamos o plano (`refatoracao.md`) e este processo (`processo.md`).
 * Criamos slides destacando melhorias e antes/depois da refatoração.
