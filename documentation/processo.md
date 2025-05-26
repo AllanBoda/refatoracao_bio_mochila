@@ -35,7 +35,6 @@ Para garantir que o código original não fosse impactado, seguimos um processo 
 * O código original **não foi sobrescrito** nem alterado.
 * Toda lógica foi testada antes e depois da refatoração.
 * Os testes garantem que o algoritmo continua funcionando como esperado.
-* Logs do Git mostram todas as mudanças feitas por etapa.
 
 ---
 
