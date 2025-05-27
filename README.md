@@ -1,30 +1,100 @@
-Análise do Código Original:
+# Bio-Mochila - Problema da Mochila com Algoritmos Bio-inspirados
 
-Pontos de Melhoria Identificados:
-Código duplicado:
+Projeto desenvolvido como parte da disciplina de **Algoritmos Avançados** do curso de Engenharia de Software.  
+O objetivo é resolver o Problema da Mochila utilizando **algoritmos genéticos**, além de realizar uma **refatoração completa** com base em boas práticas de engenharia de software (Martin Fowler), testes automatizados e arquitetura modular.
 
-Algumas operações como geração e exibição de itens são repetidas com pequenas variações.
+---
 
-Falta de coesão / responsabilidade única:
+## Objetivos
 
-A classe AplicacaoMochila mistura responsabilidades de controle, interface, visualização e execução de lógica, o que dificulta testes e manutenções futuras.
+- Refatorar código legado de outra equipe (sem alterar o original)
+- Aplicar boas práticas de projeto e refatoração (Fowler)
+- Modularizar a arquitetura: GUI, Controller e Lógica
+- Adicionar testes automatizados com `pytest`
+- Criar documentação técnica detalhada e apresentação
+- Modernizar a interface com uma estética inspirada nos anos 80 (GUI Neon)
 
-Acoplamento excessivo:
+---
 
-A GUI (interface_mochila.py) está fortemente acoplada à lógica (mochila_genetico.py), dificultando testes automáticos e reaproveitamento da lógica em outros contextos.
+## Estrutura do Projeto
 
-Falta de testes:
+```bash
+bio-mochila/
+├── algoritmo.py               # Núcleo do algoritmo genético
+├── controller.py              # Controlador da lógica
+├── gui.py                     # Interface gráfica (versão simples)
+├── main.py                    # Ponto de entrada da aplicação
+├── test/
+│   └── test_mochila_genetico.py  # Testes automatizados com pytest
+├── documentation/
+│   ├── refatoracao.md         # 📄 Documentação da refatoração
+│   └── processo.md            # 📄 Processo de desenvolvimento
+├── original/                  # Cópia do código original da equipe fornecida
+└── README.md                  # ✅ Este arquivo
+```
 
-Nenhum teste unitário foi fornecido para o algoritmo genético.
+---
 
-Nomeação inadequada:
+## Funcionalidades
 
-Nomes como app, btn_gerar_padrao, mochila_genetico poderiam ser mais descritivos ou organizados em módulos apropriados.
+- Execução do algoritmo genético para resolver o Knapsack Problem
+- Interface gráfica com botão para execução e visualização do resultado
+- Testes unitários para funções principais do algoritmo
+- Modularização clara seguindo padrão MVC
+- Documentação completa do processo e da refatoração
 
-Estrutura:
+---
 
-Arquivos como interface_mochila.py têm mais de 1000 linhas, o que prejudica a legibilidade.
+## Documentação
 
-Mistura de lógica e interface no mesmo arquivo.
+- [Documentação da Refatoração](documentation/refatoracao.md)
+- [Documentação do Processo de Trabalho](documentation/processo.md)
+- [Testes Automatizados](test/test_mochila_genetico.py)
 
------------------------------------------------------------------------------------------------------------------------------
+---
+
+## Executando o Projeto
+
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/seu-usuario/bio-mochila.git
+   cd bio-mochila
+   ```
+
+2. Instale as dependências (recomenda-se um ambiente virtual):
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. Execute a interface:
+   ```bash
+   python main.py
+   ```
+
+4. Rode os testes:
+   ```bash
+   pytest test/
+   ```
+
+---
+
+## Tecnologias e Ferramentas
+
+- Python 3.10+
+- Tkinter (GUI)
+- Pytest (Testes)
+- PEP8 + Flake8 (Análise de código)
+- Git + GitHub
+- ChatGPT (IA Assistente)
+
+---
+
+## Licença
+
+Este projeto está licenciado sob os termos da licença MIT.
+
+---
+
+## Créditos
+
+Projeto desenvolvido por [Seu Nome] como parte da disciplina de Algoritmos Avançados — Engenharia de Software.
