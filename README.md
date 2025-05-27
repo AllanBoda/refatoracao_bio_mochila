@@ -27,10 +27,16 @@ bio-mochila/
 ├── test/
 │   └── test_mochila_genetico.py  # Testes automatizados com pytest
 ├── documentation/
-│   ├── refatoracao.md         # 📄 Documentação da refatoração
-│   └── processo.md            # 📄 Processo de desenvolvimento
+│   ├── refatoracao.md         # Documentação da refatoração
+│   └── processo.md            # Processo de desenvolvimento
 ├── original/                  # Cópia do código original da equipe fornecida
-└── README.md                  # ✅ Este arquivo
+│   ├──  LICENSE               # Licensa 
+│   ├──  README.MD             # README do projeto antigo
+│   ├──  interface_mochila.py  # Interface gráfica antiga (Neon anos 80)
+│   ├──  mochila_genetico.py   # Controlador antigo da lógica
+│   ├──  requirementas.txt     # Requerimentos do projeto
+│   └──  test.md               # Arquivo de teste do projeto antigo
+└── README.md                  # Este arquivo
 ```
 
 ---
