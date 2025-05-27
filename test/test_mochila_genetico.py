@@ -1,5 +1,8 @@
 import pytest
-from mochila_genetico import (
+import sys
+import os
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+from original.mochila_genetico import (
     calcular_peso_e_valor,
     funcao_fitness,
     criar_individuo,
